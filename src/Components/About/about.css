@@ -1,0 +1,326 @@
+.timeline-sec {
+  padding: 20px;
+  padding-top: 50px;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.timeline-sec .timeline-div {
+  padding-left: 40px;
+  position: relative;
+  text-align: left;
+  border-left: 1px solid var(--main-font-color);
+}
+
+.timeline-div .timeline-icon {
+  padding: 0px !important;
+  position: absolute;
+  top: -10px;
+  left: -25px;
+}
+
+.timeline-div .timeline-icon > div {
+  background-color: var(--sec-font-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.timeline-div .timeline-icon i {
+  padding-top: 15px;
+  font-size: 1.3em;
+  color: var(--sec-bg-color);
+}
+
+.timeline-div .title > h5 {
+  font-family: var(--heading-font-family);
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.timeline-div .title > h5::after {
+  content: "";
+  background-color: var(--main-theme-color);
+  position: absolute;
+  height: 3px;
+  width: 40px;
+  bottom: -6px;
+  left: 0px;
+}
+
+.timeline-sec .desc p,
+.timeline-sec .desc span {
+  font-family: var(--sec-font-family);
+  padding-top: 3px;
+  font-size: var(--sm-font-size);
+}
+
+.timeline-head .desc p {
+  margin-bottom: 0px;
+  font-family: var(--main-font-family);
+}
+
+.timeline-sec .desc .sub-head {
+  font-family: var(--heading-font-family);
+  font-weight: 500;
+}
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: line-through;
+}
+
+.skill-sec .sec-detail {
+  width: 100%;
+}
+
+.intro-main-div,
+.skill-main-div {
+  padding: 10px 15px;
+}
+
+.intro-main-div .image {
+  width: 60%;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 25px;
+  border: 20px solid var(--main-bg-color);
+  border-radius: 50%;
+}
+
+.intro-main-div .image img {
+  border-radius: 50%;
+  border: 20px solid var(--sec-bg-color);
+}
+
+.intro-main-div .desc .title {
+  margin: 15px 10px;
+}
+
+.intro-main-div .desc h3 {
+  font-family: var(--heading-font-family);
+  font-weight: 500;
+}
+
+.intro-main-div .desc p {
+  font-size: var(--sm-font-size);
+}
+
+.skill-div {
+  height: 28px;
+  width: 100%;
+  background-color: var(--main-bg-color);
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  border-radius: 5px;
+}
+
+.skill-div .skill-name {
+  width: 30%;
+  border-radius: 5px;
+  background-color: var(--main-bg-color);
+  opacity: 0.9;
+  padding: 2px 5px;
+  font-family: var(--sec-font-family);
+}
+.skill-div .skill-range {
+  width: 70%;
+  border-radius: 5px;
+}
+
+.skill-range .progress {
+  background-color: var(--main-bg-color);
+  height: 100%;
+  border-radius: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.skill-range .progress .progress-bar {
+  background-color: var(--main-theme-color) !important;
+}
+
+.skill-div .skill-percent {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+}
+
+.connect-div {
+  width: 60%;
+  margin: 0px auto;
+  padding: 40px 60px;
+}
+
+.connect-me,
+.resume {
+  width: 240px;
+  height: 60px;
+  margin: 0px auto;
+}
+
+.connect-div .btn {
+  width: 100%;
+  height: 100%;
+}
+
+.connect-me .btn {
+  color: var(--main-theme-color);
+}
+
+.resume .btn {
+  background-color: var(--main-theme-color);
+}
+
+.special-div {
+  background-color: var(--main-theme-color);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.special-div .grid-div {
+  padding: 15px 25px;
+  border-right: 1px solid #ccc;
+}
+
+.grid-div:nth-last-child(1) {
+  border-right: none;
+}
+
+.grid-div .icon-div {
+  color: var(--main-bg-color);
+}
+.grid-div .num-div {
+  padding-top: 10px;
+  font-family: var(--main-font-family);
+  font-size: var(--md-font-size);
+  color: var(--main-font-color);
+
+}
+.grid-div .desc-div {
+   font-family: var(--main-font-family);
+  font-size: var(--md-font-size);
+  color: var(--sec-font-color);
+  font-weight: 600;
+}
+
+/* ********************************************************** */
+/* Responsive view styling starts */
+
+/***###*** MEDIA QUERIES ***###***/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .connect-div {
+    width: 70%;
+    padding: 30px 20px;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .intro-main-div .image, .intro-main-div .image img {
+  border: 15px solid var(--main-bg-color);
+}
+
+.intro-main-div .image img {
+  border: 15px solid var(--sec-bg-color);
+}
+
+  .skill-div .skill-name {
+    width: 40%;
+  }
+  .skill-div .skill-range {
+    width: 60%;
+  }
+  .connect-div {
+    width: 90%;
+    padding: 40px 20px;
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  .timeline-sec {
+    width: 100%;
+  }
+
+  .timeline-sec .timeline-div {
+    padding-left: 30px;
+  }
+
+  .timeline-icon {
+    top: -6px;
+    left: -21px;
+  }
+
+  .timeline-icon > div {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+  }
+
+  .timeline-icon i {
+    padding-top: 10px;
+  }
+
+  .timeline-sec .desc {
+    padding-top: 0px;
+  }
+
+  .title > h5::after {
+    bottom: -10px;
+  }
+  .intro-main-div .image, .intro-main-div .image img {
+  border: 10px solid var(--main-bg-color);
+}
+
+.intro-main-div .image img {
+  border: 10px solid var(--sec-bg-color);
+}
+  .skill-div .skill-name {
+    width: 40%;
+  }
+  .skill-div .skill-range {
+    width: 60%;
+  }
+  .connect-div {
+    width: 100%;
+    padding: 30px 0px;
+  }
+  .special-div .grid-div {
+  border-right: none;
+  margin: 0px auto;
+}
+}
+
+@media (max-width: 577px) {
+  .connect-div .row > div:nth-child(2) {
+    margin-top: 20px;
+  }
+}
+
+/********** Large Mobile devices only **********/
+@media (max-width: 450px) {
+}
+
+/********** Medium Mobile devices only **********/
+@media (max-width: 380px) {
+}
+
+/********** small Mobile devices only (eg: Iphone 4, ) **********/
+@media (max-width: 330px) {
+}
+
+/* Responsive view styling ends */
+/* ********************************************************** */

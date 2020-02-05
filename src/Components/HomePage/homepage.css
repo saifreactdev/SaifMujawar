@@ -1,0 +1,130 @@
+/* ********************************************************** */
+/* Main-page styling starts */
+.main-div-head {
+	padding-top: 120px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+.main-div-head h1 {
+	font-size: var(--lg-head-font-size);
+	font-family: var(--heading-font-family);
+}
+
+.main-div-intro p {
+	font-size: var(--lg-font-size);
+	font-weight: 500;
+	text-align: center;
+	font-family: var(--main-font-family);
+	width: 95%;
+	display: block;
+	margin: auto;
+}
+
+.main-div-head .typed-cursor {
+	display: none;
+}
+
+.custom {
+	font-size: 1.2em;
+	color: var(--main-theme-color) !important;
+}
+
+.quote-div {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.quote-div h3 {
+	position: relative;
+	font-family: var(--heading-font-family);
+	font-style: italic;
+}
+
+.quote-div h3::after {
+	content: "";
+	background-color: var(--main-theme-color);
+	position: absolute;
+	height: 3px;
+	right: 48.5%;
+	bottom: -5px;
+	width: 30px;
+}
+
+.quote-div blockquote {
+	font-style: italic;
+	font-family: var(--main-font-family);
+	font-size: var(--sm-font-size);
+}
+
+.quote-div blockquote .fas {
+	font-size: 0.7em;
+	margin-top: -50px;
+}
+
+.discover-btn {
+	width: 100%;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.bg-img {
+	background: url("../../assets/images/sec_bg.jpg") no-repeat center;
+	background-size: cover;
+	width: 100%;
+}
+
+.custom-bg {
+	width: 100%;
+	height: 100%;
+	background-color: var(--bg-img-color);
+}
+
+/* Main-Page styling ends */
+/* ********************************************************** */
+
+/* ************************************************************************* */
+
+/* ********************************************************** */
+/* Responsive view styling starts */
+
+/***###*** MEDIA QUERIES ***###***/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	.main-div-head {
+		padding-top: 80px;
+		padding-bottom: 30px;
+	}
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+	.main-div-head {
+		padding-top: 50px;
+		padding-bottom: 20px;
+	}
+}
+
+/********** Large Mobile devices only **********/
+@media (max-width: 450px) {
+}
+
+/********** Medium Mobile devices only **********/
+@media (max-width: 380px) {
+}
+
+/********** small Mobile devices only (eg: Iphone 4, ) **********/
+@media (max-width: 330px) {
+}
+
+/* Responsive view styling ends */
+/* ********************************************************** */

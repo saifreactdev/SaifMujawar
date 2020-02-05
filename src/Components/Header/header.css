@@ -1,0 +1,186 @@
+/* ********************************************************** */
+/* theme toggle switch animation starts */
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+	box-shadow: 0 0 3px var(--main-theme-color);
+}
+
+.slider:before {
+	background-color: var(--main-theme-color);
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+input:checked + .slider {
+	background-color: #000000;
+	box-shadow: 0 0 3px var(--main-theme-color);
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+/* theme toggle switch animation ends */
+/* ********************************************************** */
+
+/* ********************************************************** */
+/* header styling starts */
+
+.header {
+	background-color: var(--main-bg-color);
+}
+
+.navbar {
+	border-bottom: 5px solid var(--main-theme-color) !important;
+	padding: 16px;
+}
+
+.main-navbar {
+	width: 100%;
+}
+
+.navbar-expand-lg .navbar-nav {
+	flex-direction: row;
+}
+
+.navbar-nav .nav-link {
+	padding: 8px;
+}
+
+.redirect-link,
+.navbar-brand {
+	font-weight: 600;
+	font-family: var(--main-font-family) !important;
+	color: var(--main-font-color) !important;
+}
+
+.navbar-brand:hover {
+	color: var(--main-font-color) !important;
+}
+
+.redirect-link:hover {
+	text-decoration: none;
+	border-bottom: 2px solid var(--main-font-color);
+}
+
+.nav-active {
+	border-bottom: 2px solid var(--main-font-color);
+}
+
+.nav-icon {
+	color: var(--main-font-color);
+}
+
+.header > div {
+	position: relative;
+}
+
+.mobile-nav {
+	position: absolute;
+	top: 71.5px;
+	width: 100%;
+	height: 0px;
+	background-color: var(--mob-nav-bg-color);
+	z-index: 1000;
+	text-align: center;
+	overflow-y: hidden;
+	transition: height 0.4s;
+	overflow: hidden;
+}
+
+.display-mob-nav {
+	height: 300px !important;
+}
+
+.mobile-nav ul {
+	padding: 0px;
+}
+
+.mobile-nav .nav-link {
+	color: var(--main-font-color);
+	font-weight: 600;
+	font-size: 1.5em;
+	font-family: var(--main-font-family);
+	margin: 10px;
+	padding: 6px;
+}
+
+/* header styling ends */
+/* ********************************************************** */
+
+/* Responsive view styling starts */
+
+/***###*** MEDIA QUERIES ***###***/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+	.navbar {
+		padding: 8px;
+	}
+}
+
+/********** Large Mobile devices only **********/
+@media (max-width: 450px) {
+}
+
+/********** Medium Mobile devices only **********/
+@media (max-width: 380px) {
+}
+
+/********** small Mobile devices only (eg: Iphone 4, ) **********/
+@media (max-width: 330px) {
+}
+
+/* Responsive view styling ends */
+/* ********************************************************** */
